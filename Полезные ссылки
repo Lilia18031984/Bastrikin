@@ -1,0 +1,33 @@
+
+---
+
+## Инструкция по работе с Git
+
+```bash
+# Инициализация репозитория
+git init
+
+# Добавление файлов
+git add main.py .gitignore README.md requirements.txt
+
+# Создание коммита
+git commit -m "Initial commit: Random Password Generator application"
+
+# Добавление удалённого репозитория
+git remote add origin https://github.com/your-username/random-password-generator.git
+
+# Отправка изменений
+git push -u origin main
+
+# Просмотр статуса
+git status
+
+# Просмотр истории коммитов
+git log --oneline --graph
+
+# Создание и переключение на ветку разработки
+git checkout -b develop
+
+# Добавление тега версии
+git tag -a v1.0 -m "First stable release"
+git push origin v1.0
